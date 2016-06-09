@@ -4,7 +4,7 @@ import java.io.IOException;
 
 public class Demo3 {
     public static void main(String [] args){
-        Reverse reverse = new Reverse();
+        TextFile reverse = new TextFile();
         try {
             System.out.println(reverse.reverseFile("Test"));
         } catch (IOException e) {

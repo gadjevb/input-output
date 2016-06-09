@@ -1,5 +1,7 @@
 package com.clouway.io.task6;
 
+import com.sun.org.apache.bcel.internal.generic.INSTANCEOF;
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -11,7 +13,7 @@ public class Demo6 {
         System.out.print("Enter the file path: ");
         tempPath = sc.nextLine();
         try {
-            System.out.println(browser.listContent(tempPath));
+            browser.listContent(tempPath);
         } catch (IOException e) {
             e.getStackTrace();
         }

@@ -2,9 +2,15 @@ package com.clouway.io.task2;
 
 import java.io.*;
 
-public class ConsoleInput {
+public class ConsoleReader {
 
-    public void writeInFile(String fileName) throws IOException {
+    private String end = ".";
+
+    public void readTillReach(String endMark){
+        end = endMark;
+    }
+
+    public void write(String fileName) throws IOException {
         PrintWriter output = null;
         boolean flag = true;
         InputStreamReader input = new InputStreamReader(System.in);
@@ -15,7 +21,7 @@ public class ConsoleInput {
         while(flag){
             String temp = "";
             temp = in.readLine();
-            if(temp.equals(".")){
+            if(temp.equals(end)){
                 flag = false;
             }else {
                 output.println(temp);

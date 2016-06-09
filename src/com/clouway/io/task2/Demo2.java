@@ -5,13 +5,14 @@ import java.util.Scanner;
 
 public class Demo2 {
     public static void main(String [] args){
-        ConsoleInput writer = new ConsoleInput();
+        ConsoleReader writer = new ConsoleReader();
+        writer.readTillReach(".");
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the name of the text file you wish to write in: ");
         String fileName = sc.nextLine();
-        System.out.println("You can begin with the input of your information, if you wish to stop, enter a single dot!");
+        System.out.println("You can begin with the input of your information! The default mark for ending is a single dot!");
         try {
-            writer.writeInFile(fileName);
+            writer.write(fileName);
         } catch (IOException e) {
             e.printStackTrace();
         }

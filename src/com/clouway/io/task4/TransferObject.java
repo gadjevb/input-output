@@ -17,12 +17,6 @@ public class TransferObject {
             count++;
             offset--;
         }
-        if(output != null){
-            output.close();
-        }
-        if(input != null){
-            input.close();
-        }
         count--;
         return count;
     }

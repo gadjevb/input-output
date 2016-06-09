@@ -4,9 +4,9 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Reverse {
+public class TextFile {
 
-    public String reverseFile(String fileName) throws IOException, FileNotFoundException {
+    public String reverseFile(String fileName) throws IOException {
         Scanner reader = null;
         PrintWriter writer = null;
 

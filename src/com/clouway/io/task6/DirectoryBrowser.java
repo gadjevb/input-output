@@ -6,11 +6,11 @@ import java.io.File;
 
 public class DirectoryBrowser {
 
-    public String listContent(String path) throws IOException {
+    public void listContent(String path) throws IOException {
         Path dir = Paths.get(path);
         File flagFile = new File(path);
         if(flagFile.isFile()){
-            return flagFile.getName() + " -> is file, not a directory!";
+            return;
         }else {
             try (DirectoryStream<Path> stream = Files.newDirectoryStream(dir)) {
                 for (Path file : stream) {
@@ -18,6 +18,5 @@ public class DirectoryBrowser {
                 }
             }
         }
-        return "";
     }
 }
