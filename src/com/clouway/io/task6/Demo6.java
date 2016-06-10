@@ -14,7 +14,8 @@ public class Demo6 {
         tempPath = sc.nextLine();
         try {
             browser.listContent(tempPath);
-        } catch (IOException e) {
+        } catch (IOException | NotADirectory e) {
+            System.out.println(e.getMessage());
             e.getStackTrace();
         }
     }
