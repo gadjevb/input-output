@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class TextFile {
+public class TextFileApi {
 
     public String reverseFile(String fileName) throws IOException {
         Scanner reader = null;

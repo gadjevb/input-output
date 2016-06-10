@@ -2,9 +2,9 @@ package com.clouway.io.task3;
 
 import java.io.IOException;
 
-public class TextFileDemo {
+public class TextFileApiDemo {
     public static void main(String [] args){
-        TextFile reverse = new TextFile();
+        TextFileApi reverse = new TextFileApi();
         try {
             System.out.println(reverse.reverseFile("Test"));
         } catch (IOException e) {
