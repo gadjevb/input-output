@@ -2,7 +2,7 @@ package com.clouway.io.task4;
 
 import java.io.*;
 
-public class Demo4 {
+public class TransferObjectDemo {
     public static void main(String [] args) {
         TransferObject transfer = new TransferObject();
         InputStream input = null;

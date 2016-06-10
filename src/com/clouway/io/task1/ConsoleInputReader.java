@@ -2,7 +2,7 @@ package com.clouway.io.task1;
 
 import java.io.*;
 
-public class ConsoleReader {
+public class ConsoleInputReader {
 
     private InputStreamReader input = new InputStreamReader(System.in);
     private BufferedReader in = new BufferedReader(input);

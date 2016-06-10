@@ -2,7 +2,7 @@ package com.clouway.io.task5;
 
 import java.io.*;
 
-public class Demo5 {
+public class SerializationDemo {
     public static void main(String [] args){
         DataClass data = new DataClass();
         OutputStream output = null;

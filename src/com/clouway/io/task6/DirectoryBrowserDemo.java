@@ -5,7 +5,7 @@ import com.sun.org.apache.bcel.internal.generic.INSTANCEOF;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Demo6 {
+public class DirectoryBrowserDemo {
     public static void main (String [] args){
         Scanner sc = new Scanner(System.in);
         DirectoryBrowser browser = new DirectoryBrowser();

@@ -2,9 +2,9 @@ package com.clouway.io.task1;
 
 import java.io.IOException;
 
-public class Demo1 {
+public class ConsoleInputReaderDemo {
     public static void main(String [] args){
-        ConsoleReader read = new ConsoleReader();
+        ConsoleInputReader read = new ConsoleInputReader();
         int tempInt = 0;
         try {
             tempInt = read.readInt();

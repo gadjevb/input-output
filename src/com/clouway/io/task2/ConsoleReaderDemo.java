@@ -3,7 +3,7 @@ package com.clouway.io.task2;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Demo2 {
+public class ConsoleReaderDemo {
     public static void main(String [] args){
         ConsoleReader writer = new ConsoleReader();
         writer.readTillReach(".");

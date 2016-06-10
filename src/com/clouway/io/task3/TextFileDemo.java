@@ -2,7 +2,7 @@ package com.clouway.io.task3;
 
 import java.io.IOException;
 
-public class Demo3 {
+public class TextFileDemo {
     public static void main(String [] args){
         TextFile reverse = new TextFile();
         try {
